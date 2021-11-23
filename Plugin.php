@@ -32,4 +32,9 @@ class Plugin extends Base
     {
         return 'Clickable boxes in Textareas';
     }
+    
+    public function getPluginHomepage()
+    {
+        return "https://github.com/Chaosmeister/CCIT"
+    }
 }
