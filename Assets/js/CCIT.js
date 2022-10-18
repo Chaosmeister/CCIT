@@ -1,6 +1,6 @@
 KB.on('dom.ready', function() {
     const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('controller') == "TaskViewController" && urlParams.get('action') == 'show') {
+    if ((urlParams.get('controller') == "TaskViewController" && urlParams.get('action') == 'show') || /\/task\/[0-9]+$/.test(window.location)) {
         var Content = document.getElementsByClassName('sidebar-content')[0];
 
         const elements = [...Content.getElementsByTagName('input')];
